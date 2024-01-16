@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sacramento&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', cursive;
+}
+
+.bg-img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;  
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(background.jpg) no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-family: 'Sacramento', cursive;
+    font-weight: 500;
+    font-size: 60px;
+
+    color: #DFD6A7;
+    
+}
+
+.management-system{
+    width: 500px;
+    height: 350px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    margin-top: 50px;
+    border-radius: 10px;
+
+    background-color: #D3964C;
+}
+
+
+
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+    font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#bbbbbbe9;	
+    pointer-event:none;
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:2px solid #888888;  
+  background:transparent;
+  width:200px;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#000000;
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:2px solid #000000;	
+}
+
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+    color: black;
+	font-size:12px;
+	
+}
